@@ -12,3 +12,12 @@ github_username:  heldinz
 
 # Build settings
 markdown: kramdown
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Alice Rose"
