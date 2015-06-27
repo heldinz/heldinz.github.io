@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Frontend Architecture with Maven and npm"
-categories: frontend architecture
+category: blog
+tags: frontend architecture
 ---
 Today I was consulted on the frontend architecture for an upcoming project at work.
 It is a [Maven][maven] project with several intended client platforms. These are
