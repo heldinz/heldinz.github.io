@@ -2,20 +2,33 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 64px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+    text-align: center;
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+    display: block;
+    min-height: 70px;
+    margin-top: 5px;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 1px #eee;
+    word-spacing: 0.3em;
+
+    transition: all .2s ease;
+
+    &:hover {
+      text-decoration: none;
+      // transform: scale(1.1);
+      font-size: 70px;
+    }
 
     &,
     &:visited {
@@ -24,7 +37,6 @@
 }
 
 .site-nav {
-    float: right;
     line-height: 56px;
 
     .menu-icon {
@@ -32,12 +44,24 @@
     }
 
     .page-link {
+        display: inline-block;
+        min-width: 100px;
+        padding: 10px;
+        border-radius: 5px;
+
         color: $text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
+        }
+
+        &:hover,
+        &:focus,
+        &.is-active {
+          background-color: #eee;
+          text-decoration: none;
         }
     }
 
@@ -179,6 +203,7 @@
 }
 
 .post-meta {
+    display: block;
     font-size: $small-font-size;
     color: $grey-color;
 }
@@ -186,6 +211,24 @@
 .post-link {
     display: block;
     font-size: 24px;
+}
+
+.more-link {
+    display: inline-block;
+    padding: 5px 10px;
+
+    border-radius: 2px;
+
+    background-color: $brand-color;
+
+    font-size: $small-font-size;
+
+    &,
+    &:active,
+    &:focus,
+    &:visited {
+      color: white;
+    }
 }
 
 

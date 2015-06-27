@@ -1,23 +1,76 @@
 ---
 layout: default
+title: Blog
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date: "%-d %b %Y" | date: "%-d %b %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="post-meta">{{ post.date: "%-d %b %Y" | date: "%-d %b %Y" }}</span>
         </h2>
+        {{ post.excerpt }}
+        <a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Continue Reading →</a>
       </li>
     {% endfor %}
   </ul>
-
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  <h1>Posts on Other Platforms</h1>
+  <ul class="post-list">
+    <li>
+      <h2>
+        <a class="post-link" href="http://blog.akquinet.de/2014/11/25/js-test-coverage/">Managing
+          JavaScript Test Coverage with SonarQube, Maven, Karma and gulp</a>
+        <span class="post-meta">25 November 2014</span>
+      </h2>
+      <p>
+        <a href="http://www.sonarqube.org/">SonarQube</a> (formerly Sonar) has become a standard code quality tool for Java applications.
+        With recent releases, it has become easier to analyse code other than Java, even all within
+        the same project. This means that you can now bring code quality analysis to your JavaScript
+        code, too. In this blog post, we show you how.
+      </p>
+      <a class="more-link"
+        href="http://blog.akquinet.de/2014/11/25/js-test-coverage/#more-7222">Continue Reading →</a>
+    </li>
+    <li>
+      <h2>
+        <a class="post-link"
+          href="http://blog.akquinet.de/2011/06/20/creating-web-applications-with-play-an-introduction/">Creating
+          Web Applications with Play! – An introduction</a>
+        <span class="post-meta">20 June 2011</span>
+      </h2>
+      <p>
+        Play! is an open-source framework for building web applications in Java or Scala.
+        It is stateless and promotes RESTfulness: it embraces web-oriented architecture.
+        But best of all, Play is simple, fast and ultimately fun. It is also pretty powerful
+        and allows the development of sophisticated web applications in an efficient way.
+        akquinet is now using Play as the basis for different applications.
+      </p>
+      <p>
+        To illustrate how easy and powerful Play is, this blog post presents a miniature web application.
+      </p>
+      <a class="more-link"
+        href="http://blog.akquinet.de/2011/06/20/creating-web-applications-with-play-an-introduction/">Continue Reading →</a>
+    </li>
+    <li>
+      <h2>
+        <a class="post-link" href="http://onlinegroups.net/blog/2010/08/04/working-from-home-time-management/">Working
+          from Home: Time Management</a>
+        <span class="post-meta">4 August 2010</span>
+      </h2>
+      <p>
+        Back in 2008, I shifted my working days to Tuesday to Friday in the office, then
+        from home on Saturdays. Overall it worked well, but some Saturdays were harder
+        than others. I wasn’t sure why, but on those days I found it particularly hard to
+        concentrate, and ended up having to work on and off…
+      </p>
+      <a class="more-link"
+        href="http://onlinegroups.net/blog/2010/08/04/working-from-home-time-management/">Continue Reading →</a>
+    </li>
+  </ul>
 
 </div>
