@@ -1,0 +1,22 @@
+<div class="featured">
+  <div class="wrapper">
+
+    <div class="latest-post">
+
+      <h2>Latest Blog Post</h2>
+
+      {% assign post = site.posts.first %}
+      <ul class="post-list">
+          <li>
+            <h3>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <span class="post-meta">{{ post.date: "%-d %b %Y" | date: "%-d %b %Y" }}</span>
+            </h3>
+            {{ post.excerpt }}
+            <a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Continue Reading →</a>
+          </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

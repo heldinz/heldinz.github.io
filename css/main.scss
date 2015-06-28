@@ -16,6 +16,9 @@ $spacing-unit:     1.875em;
 $text-color:       #444444;
 $background-color: #fdfdfd;
 $brand-color:      green;
+$brand-color-light: lighten($brand-color, 40%);
+
+$contrast-color:   white;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
