@@ -9,7 +9,7 @@ I started using [React][react] a few months ago, for the large-scale redesign
 I'm currently working on at my day job. I am really impressed so far and am
 enjoying coding within this paradigm. However, as with any new technology, there
 is always a learning curve and changes to workflow to consider. I like the
-readability (and writeability) afforded by JSX, but using it adds another step
+readability (and writeability) afforded by JSX, but using it does add another step
 not only to the build process, but also to the testing process.
 
 Impressed by the ease of use and the automatic Mocking of Everything, I began
