@@ -108,17 +108,15 @@
     font-size: $small-font-size;
 }
 
-.contact-list {
-  width: 40%;
-}
-
 .contact-list.col1 {
   float: left;
+  width: 50%;
   text-align: left;
 }
 
 .contact-list.col2 {
   float: right;
+  width: 30%;
   text-align: right;
 }
 
