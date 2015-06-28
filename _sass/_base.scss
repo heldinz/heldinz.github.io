@@ -82,6 +82,11 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
+@include media-query($medium) {
+  h1 {
+    display: none;
+  }
+}
 
 
 
@@ -161,7 +166,7 @@ pre {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @include media-query($large) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;

@@ -3,30 +3,33 @@ layout: default
 title: Blog
 ---
 
-<div class="home">
+<div class="content">
 
+  <!-- <h1>Blog</h1> -->
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           <span class="post-meta">{{ post.date: "%-d %b %Y" | date: "%-d %b %Y" }}</span>
-        </h2>
+        </h3>
         {{ post.excerpt }}
         <a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Continue Reading →</a>
       </li>
     {% endfor %}
   </ul>
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><span class="fa fa-rss-square"></span> Subscribe via RSS</a>
+  </p>
 
-  <h1>Posts on Other Platforms</h1>
+  <h2 class="other-posts">Older Posts on Other Platforms</h2>
   <ul class="post-list">
     <li>
-      <h2>
+      <h3>
         <a class="post-link" href="http://blog.akquinet.de/2014/11/25/js-test-coverage/">Managing
           JavaScript Test Coverage with SonarQube, Maven, Karma and gulp</a>
         <span class="post-meta">25 November 2014</span>
-      </h2>
+      </h3>
       <p>
         <a href="http://www.sonarqube.org/">SonarQube</a> (formerly Sonar) has become a standard code quality tool for Java applications.
         With recent releases, it has become easier to analyse code other than Java, even all within
@@ -37,12 +40,12 @@ title: Blog
         href="http://blog.akquinet.de/2014/11/25/js-test-coverage/#more-7222">Continue Reading →</a>
     </li>
     <li>
-      <h2>
+      <h3>
         <a class="post-link"
           href="http://blog.akquinet.de/2011/06/20/creating-web-applications-with-play-an-introduction/">Creating
           Web Applications with Play! – An introduction</a>
         <span class="post-meta">20 June 2011</span>
-      </h2>
+      </h3>
       <p>
         Play! is an open-source framework for building web applications in Java or Scala.
         It is stateless and promotes RESTfulness: it embraces web-oriented architecture.
@@ -57,11 +60,11 @@ title: Blog
         href="http://blog.akquinet.de/2011/06/20/creating-web-applications-with-play-an-introduction/">Continue Reading →</a>
     </li>
     <li>
-      <h2>
+      <h3>
         <a class="post-link" href="http://onlinegroups.net/blog/2010/08/04/working-from-home-time-management/">Working
           from Home: Time Management</a>
         <span class="post-meta">4 August 2010</span>
-      </h2>
+      </h3>
       <p>
         Back in 2008, I shifted my working days to Tuesday to Friday in the office, then
         from home on Saturdays. Overall it worked well, but some Saturdays were harder
