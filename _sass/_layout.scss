@@ -291,9 +291,14 @@ a {
     }
 }
 
+
 /**
- * Feature
+ * Homepage
  */
+ .home {
+   padding-bottom: 0;
+ }
+
 .featured {
   margin-top: 2em;
   background-color: $brand-color;
@@ -326,13 +331,6 @@ a {
     padding: 1em 0;
   }
 
-  .post-link {
-    &,
-    &:visited {
-        color: $grey-color-light;
-    }
-  }
-
   .more-link {
     background-color: $contrast-color;
 
@@ -345,7 +343,7 @@ a {
     &:hover,
     &:active,
     &:focus {
-      color: $brand-color;
+      // color: $brand-color;
       opacity: 1.0;
     }
   }
