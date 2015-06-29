@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: Lato, Helvetica, Arial, sans-serif;
+$base-font-family: 'Lato', Helvetica, Arial, sans-serif;
 $base-font-size:   100%;
 $small-font-size:  0.875 * 1em;
 $base-line-height: 1.5;
@@ -47,6 +47,7 @@ $large:           800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "fonts",
         "base",
         "layout",
         "syntax-highlighting"
