@@ -108,6 +108,10 @@
     font-size: $small-font-size;
 }
 
+.contact-list > li + li {
+    margin-top: 1em;
+}
+
 .contact-list.col1 {
   float: left;
   width: 50%;
@@ -169,6 +173,7 @@ a {
       }
 
       li + li {
+        margin-top: 0;
         margin-left: 1.2em;
       }
 
